@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "referral io front end",
   "scripts": {
-    "build": "rimraf dist && webpack --bail --progress --profile",
+    "build": "rm -rf dist && webpack --bail --progress --profile",
     "server": "webpack-dev-server --history-api-fallback --inline --progress",
     "test": "karma start",
     "test-watch": "karma start --auto-watch --no-single-run",
