@@ -6,12 +6,10 @@ let profileModule = angular.module('profile', [
   uiRouter
 ])
 
-.config(($stateProvider, $urlRouterProvider) => {
-  $urlRouterProvider.otherwise('/');
-
+.config(($stateProvider) => {
   $stateProvider
     .state('profile', {
-      url: '/#/profile',
+      url: '/profile',
       template: '<profile></profile>'
     });
 })

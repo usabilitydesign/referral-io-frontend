@@ -6,16 +6,14 @@ let signupModule = angular.module('signup', [
   uiRouter
 ])
 
-// .config(($stateProvider, $urlRouterProvider) => {
-//   $urlRouterProvider.otherwise('/');
+.config(($stateProvider, $urlRouterProvider) => {
+  $stateProvider
+    .state('signup', {
+      url: '/signup',
+      template: '<signup></signup>'
+    });
+})
 
-//   $stateProvider
-//     .state('signup', {
-//       url: '/signup',
-//       template: '<signup></signup>'
-//     });
-// })
-
-// .component('signup', signupComponent);
+.component('signup', signupComponent);
 
 export default signupModule;
