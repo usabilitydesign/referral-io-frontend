@@ -1,6 +1,7 @@
 class HomeController {
-  constructor() {
+  constructor(Service) {
     this.name = 'home';
+    this.service = Service;
   }
 }
 
