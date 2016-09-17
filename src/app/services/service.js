@@ -1,27 +1,31 @@
-class GithubService {
+import { baseUrl } from '../constants';
 
-  constructor($http) {
-    this.$http = $http;
+class ApiService {
+
+  constructor() { 
   }
 
-  // getItems(githubUsername) {
-  //   var githubUrl = 'https://api.github.com';
-  //   return this.$http({
-  //     method: 'JSONP',
-  //     url: githubUrl + '/users/' +
-  //     githubUsername + '?callback=JSON_CALLBACK'
-  //   }).success(function(data) {
-  //     // this callback will be called asynchronously
-  //     // when the response is available
-  //     return data.data.toJSON();
-  //   }).
-  //   error(function(data, status) {
-  //     // called asynchronously if an error occurs
-  //     // or server returns response with an error status.
-  //     alert(status);
-  //   });
-  // }
+  getUsers() {
+    return fetch(`${baseUrl}/api/users`, {
+      method: 'GET'
+    })
+      .then(body => body.json())
+      .then(result => {
+        console.log('getUsers', result);
+        return result;
+      });
+  }
 
+  getRoles() {
+    return fetch(`${baseUrl}/api/roles`, {
+      method: 'GET'
+    })
+      .then(body => body.json())
+      .then(result => {
+        console.log('getRoles', result);
+        return result;
+      });
+  }
 }
 
-export default GithubService;
+export default ApiService;
