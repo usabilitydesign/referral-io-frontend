@@ -5,9 +5,8 @@ import AppComponent from './app.component.js';
 import Common from './common/common';
 import Components from './components/components';
 import '../style/app.css';
-import signupComponent from './components/signup/signup.component';
-// import profileComponent from './components/profile/profile.component';
-
+import AppFactory from './app.config';
+var css = require("!style!css!sass!../style/main.scss");
 
 
 angular.module('app', [
@@ -16,20 +15,4 @@ angular.module('app', [
   Components.name
 ])
 .directive('app', AppComponent)
-.component('signup', signupComponent)
-// .component('profile', profileComponent)
-.config(($stateProvider, $urlRouterProvider) => {
-
-  // $stateProvider
-  //   .state('signup', {
-  //     url: '/signup',
-  //     template: '<signup></signup>'
-  //   })
-    // .state('profile', {
-    //   url: '/profile',
-    //   template: '<profile></profile>'
-    // });
-})
-
-
-
+.factory('AppFactory', AppFactory);

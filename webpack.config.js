@@ -7,6 +7,8 @@ var HtmlWebpackPlugin = require('html-webpack-plugin');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var CopyWebpackPlugin = require('copy-webpack-plugin');
 
+// returns compiled css code from file.scss, resolves Sass and CSS imports and url(...)s
+
 /**
  * Env
  * Get npm lifecycle event to identify the environment
@@ -88,6 +90,9 @@ module.exports = function makeWebpackConfig () {
       loader: 'babel',
       exclude: /node_modules/
     }, {
+      test: /\.scss$/,
+      loaders: ["style", "css", "sass"]
+    }, {
       // CSS LOADER
       // Reference: https://github.com/webpack/css-loader
       // Allow loading css through js
@@ -144,6 +149,7 @@ module.exports = function makeWebpackConfig () {
       browsers: ['last 2 version']
     })
   ];
+
 
   /**
    * Plugins
