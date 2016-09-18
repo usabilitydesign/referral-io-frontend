@@ -8,10 +8,23 @@ let profileModule = angular.module('profile', [
 
 .config(($stateProvider) => {
   $stateProvider
-    .state('profile', {
-      url: '/profile',
-      template: '<profile></profile>'
-    });
+     .state('profile', {
+          // abstract: true,
+          templateUrl: 'profile.html'
+      })
+      // .state('profile.codereview', {
+      //     // loaded into ui-view of parent's template
+      //     templateUrl: 'profile.codereview.html'
+      // })
+    // .state('profile', {
+    //   url: '/profile',
+    //   template: '<profile></profile>'
+    // })
+    // .state('codereview', {
+    //   url: '/codereview',
+    //   parent: 'profile',
+    //   template: '<codereview></codereview>'
+    // });
 })
 
 .component('profile', profileComponent);
