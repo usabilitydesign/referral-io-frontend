@@ -4,7 +4,11 @@ import Profile from './profile/profile';
 import Signup from './signup/signup';
 import Company from './company-profile/company-profile'
 import Review from './review/review';
+
 import Jobs from './jobs/jobs';
+
+import About from './about/about';
+
 
 export default angular.module('app.components', [
   Home.name,
@@ -12,5 +16,6 @@ export default angular.module('app.components', [
   Signup.name,
   Company.name,
   Review.name,
-  Jobs.name
+  Jobs.name,
+  About.name
 ]);
