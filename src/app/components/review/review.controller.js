@@ -1,7 +1,7 @@
-class HomeController {
+class ReviewController {
   constructor(Service) {
     // init
-    this.name = 'home';
+    this.name = 'review';
     this.service = Service;
     this.users = [];
 
@@ -33,4 +33,4 @@ class HomeController {
   }
 }
 
-export default HomeController;
+export default ReviewController;

@@ -1,0 +1,75 @@
+body{
+	background-color: #f3f3f3;
+
+}
+
+#apply-btn{
+	width: 200px;
+	margin-top: 70px;
+	left: 50%;
+	background-color: #1C7EBB;
+	 -webkit-border-radius: 0 !important;
+     -moz-border-radius: 0 !important;
+          border-radius: 0 !important;
+}
+
+.job-header{
+	border-bottom:1px solid #D1DEE3;
+	padding-bottom: 20px;
+}
+
+.matching-skills{
+	border: 1px solid #DCDDDE;
+	padding: 10px;
+	border-radius: 5px;
+	background-color: #FCFCFC;
+	margin-bottom: 100px;
+
+}
+
+.matching-skills .glyphicon-plus{
+	color: #5ECC67;
+}
+
+.matching-skills .glyphicon-minus{
+	color: #9E4949;
+}
+
+.requirements{
+	padding-left: 70px;
+}
+
+.requirements h5{
+	color: #2F4C6E;
+	color:#008ACD;
+}
+
+.skills{
+	font-size: 1em;
+}
+.skills  tr td{
+	padding-top: 5px;
+}
+
+
+.skills tr td:nth-child(1){
+	width: 100px;
+}
+.skills button{
+	margin-left: 8px;
+	color: white;
+	width:85px;
+	text-align: center;
+}
+
+.skills .expert{
+	background-color: #34c0cc;
+}
+
+.skills .intermediate{
+	background-color: #21ae89;
+}
+
+.skills .novice{
+	background-color: #449DD5;
+}

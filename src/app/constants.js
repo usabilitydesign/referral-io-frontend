@@ -1,0 +1,1 @@
+export const baseUrl = 'http://referral-io-api.herokuapp.com';
