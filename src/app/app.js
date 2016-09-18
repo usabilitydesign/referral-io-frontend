@@ -10,47 +10,17 @@ import companyProfileComponent from './components/company-profile/company-profil
 // import profileComponent from './components/profile/profile.component';
 
 
+import AppFactory from './app.config';
+import "!style!css!sass!../style/main.scss";
+import "!style!css!sass!../style/ui.scss";
+import "!style!css!../style/style.css";
 
-angular.module('app', [
-  uiRouter,
-  Common.name,
-  Components.name
-])
-.directive('app', AppComponent)
-.component('signup', signupComponent)
-// .component('profile', profileComponent)
-.config(($stateProvider, $urlRouterProvider) => {
-
-  // $stateProvider
-  //   .state('signup', {
-  //     url: '/signup',
-  //     template: '<signup></signup>'
-  //   })
-    // .state('profile', {
-    //   url: '/profile',
-    //   template: '<profile></profile>'
-    // });
-})
-
-
-angular.module('app', [
-  uiRouter,
-  Common.name,
-  Components.name
-])
-.directive('app', AppComponent)
-.component('company-profile', companyProfileComponent)
-// .component('profile', profileComponent)
-.config(($stateProvider, $urlRouterProvider) => {
-
-  // $stateProvider
-  //   .state('signup', {
-  //     url: '/signup',
-  //     template: '<signup></signup>'
-  //   })
-    // .state('profile', {
-    //   url: '/profile',
-    //   template: '<profile></profile>'
-    // });
-})
-
+angular
+  .module('app', [
+    uiRouter,
+    Common.name,
+    Components.name
+  ])
+  .directive('app', AppComponent)
+  .factory('AppFactory', AppFactory)
+  .config(($stateProvider, $urlRouterProvider) => {});
