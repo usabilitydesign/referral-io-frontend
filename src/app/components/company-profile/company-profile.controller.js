@@ -1,6 +1,6 @@
 class CompanyController {
   constructor(Service) {
-    this.name = 'company-profile';
+    this.name = 'company';
     this.service = Service;
   }
 }

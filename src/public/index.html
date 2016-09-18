@@ -1,23 +1,25 @@
 <!doctype html>
 <html ng-app="app" lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <title>REFERRAL.IO</title>
-    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
-    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css">
-    <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
-    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-    <script src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <base href="/"> </head>
+    <head>
+        <meta charset="UTF-8">
+        <title>REFERRAL.IO</title>
+        <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+        <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <link rel="stylesheet" href="font-awesome-4.6.3/css/font-awesome.min.css">
+        <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic' rel='stylesheet' type='text/css'>
+        <script src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
 
-<body>
-    <app class='app' data-ng-class=" { 'layout-boxed': app.main.layout === 'boxed',
-                                       'nav-collapsed-min': app.main.isMenuCollapsed
-            } "> </app>
-</body>
+        <script src="https://d3js.org/d3.v4.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <base href="/">
+    </head>
 
+    <body>
+        <app class='app' data-ng-class=" { 'layout-boxed': app.main.layout === 'boxed',
+                                           'nav-collapsed-min': app.main.isMenuCollapsed
+        } ">
+        </app>
+    </body>
 </html>
