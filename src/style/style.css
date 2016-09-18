@@ -1,0 +1,182 @@
+body {
+    background: #f2f2f3;
+}
+
+h2 {
+    color: #21ae89;
+}
+
+.sub-title {
+    font-weight: bold;
+    color: #515151;
+    display: inline;
+}
+
+.projects .btn-info {
+    display: inline;
+}
+
+.profile-block {
+    width: 100%;
+    background-color: white;
+    border: 5px solid #e8e8e8;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+/* Progress Bar */
+
+.bs-wizard {
+    margin-top: 40px;
+}
+
+
+/*Form Wizard*/
+
+.bs-wizard {
+    border-bottom: solid 1px #e0e0e0;
+    padding: 0 0 10px 0;
+}
+
+.bs-wizard > .bs-wizard-step {
+    padding: 0;
+    position: relative;
+}
+
+.bs-wizard > .bs-wizard-step + .bs-wizard-step {}
+
+.bs-wizard > .bs-wizard-step .bs-wizard-stepnum {
+    color: #595959;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.bs-wizard > .bs-wizard-step .bs-wizard-info {
+    color: #999;
+    font-size: 14px;
+    margin-top: 55px;
+    width: 60%;
+    margin-left: 19%;
+}
+
+.bs-wizard > .bs-wizard-step > .bs-wizard-dot {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    display: block;
+    background: #fbbd19;
+    top: 45px;
+    left: 50%;
+    margin-top: -50px;
+    margin-left: -50px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.bs-wizard > .bs-wizard-step > .bs-wizard-dot:hover{
+    cursor:pointer;
+    text-decoration: none;
+}
+
+.bs-wizard > .bs-wizard-step > .progress {
+    position: relative;
+    border-radius: 0px;
+    height: 8px;
+    box-shadow: none;
+    margin: 20px 0;
+    background-color: #b7b7b7;
+}
+
+.bs-wizard > .bs-wizard-step > .progress > .progress-bar {
+    width: 0px;
+    box-shadow: none;
+    background: #fbbd19;
+}
+
+.bs-wizard > .bs-wizard-step.complete > .progress > .progress-bar {
+    width: 100%;
+}
+
+.bs-wizard > .bs-wizard-step.active > .progress > .progress-bar {
+    width: 50%;
+}
+
+.bs-wizard > .bs-wizard-step:first-child.active > .progress > .progress-bar {
+    width: 0%;
+}
+
+.bs-wizard > .bs-wizard-step:last-child.active > .progress > .progress-bar {
+    width: 100%;
+}
+
+.bs-wizard > .bs-wizard-step.disabled > .bs-wizard-dot {
+    background-color: #b7b7b7;
+    color: white;
+}
+
+.bs-wizard > .bs-wizard-step.disabled > .bs-wizard-dot:after {
+    opacity: 0;
+}
+
+.bs-wizard > .bs-wizard-step:first-child > .progress {
+    left: 50%;
+    width: 50%;
+}
+
+.bs-wizard > .bs-wizard-step:last-child > .progress {
+    width: 50%;
+}
+
+.bs-wizard > .bs-wizard-step.disabled a.bs-wizard-dot {
+    pointer-events: visible;
+    text-decoration: none;
+}
+
+.review-block {
+    width: 100%;
+    background-color: white;
+    border: 5px solid #e8e8e8;
+    padding: 15px;
+    overflow: scroll;
+    margin-bottom: 50px;
+}
+
+.review-block h2 {
+    margin-bottom: 20px;
+    margin-top: 50px;
+}
+
+.progress-skill {
+    display: inline-block;
+}
+
+.progress-bar-success {
+    background-color: #21ae89;
+}
+
+.review-projects a {
+    text-decoration: none;
+}
+
+.btn-info {
+    background-color: white;
+    border: 0;
+    color: #34c0cc;
+    font-weight: bold;
+    border-radius: 0;
+    outline: 0;
+    display: inline-block;
+}
+
+.btn-info:hover,
+.btn-info:active,
+.btn-info:focus {
+    background: white;
+    border: 0;
+    color: #2ea0a3;
+    font-weight: bold;
+    outline: 0;
+}
