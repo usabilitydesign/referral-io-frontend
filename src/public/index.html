@@ -1,15 +1,28 @@
 <!doctype html>
 <html ng-app="app" lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Angular App</title>
-  <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
-  <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <base href="/">
-</head>
+<head>
+    <meta charset="UTF-8">
+    <title>REFERRAL.IO</title>
+    <link rel="icon" type="image/x-icon" href="/img/favicon.ico">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <script src="bootstrap-3.3.7-dist/js/bootstrap.js"></script>
+
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src="liquidFillGauge.js"></script>
+    <script src="d3-settings.js"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <base href="/"> </head>
+
 <body>
-  <app></app>
+    <app class='app' data-ng-class=" { 'layout-boxed': app.main.layout === 'boxed',
+                                       'nav-collapsed-min': app.main.isMenuCollapsed
+            } "> </app>
 </body>
+
 </html>

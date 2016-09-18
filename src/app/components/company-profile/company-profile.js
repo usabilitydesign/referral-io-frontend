@@ -4,18 +4,18 @@ import uiRouter from 'angular-ui-router';
 import companyProfileComponent from './company-profile.component';
 
 
-let companyModule = angular.module('company-profile', [
+let companyModule = angular.module('company', [
   uiRouter
 ])
 
 .config(($stateProvider, $urlRouterProvider) => {
   $stateProvider
-    .state('company-profile', {
-      url: '/company-profile',
-      template: '<company-profile></company-profile>'
+    .state('company', {
+      url: '/company',
+      template: '<company></company>'
     });
 })
 
-.component('company-profile', companyProfileComponent);
+.component('company', companyProfileComponent);
 
 export default companyModule;
