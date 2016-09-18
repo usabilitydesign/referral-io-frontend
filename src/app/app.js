@@ -6,6 +6,7 @@ import Common from './common/common';
 import Components from './components/components';
 import '../style/app.css';
 import signupComponent from './components/signup/signup.component';
+import companyProfileComponent from './components/company-profile/company-profile.component'
 // import profileComponent from './components/profile/profile.component';
 
 
@@ -32,4 +33,24 @@ angular.module('app', [
 })
 
 
+angular.module('app', [
+  uiRouter,
+  Common.name,
+  Components.name
+])
+.directive('app', AppComponent)
+.component('company-profile', companyProfileComponent)
+// .component('profile', profileComponent)
+.config(($stateProvider, $urlRouterProvider) => {
+
+  // $stateProvider
+  //   .state('signup', {
+  //     url: '/signup',
+  //     template: '<signup></signup>'
+  //   })
+    // .state('profile', {
+    //   url: '/profile',
+    //   template: '<profile></profile>'
+    // });
+})
 

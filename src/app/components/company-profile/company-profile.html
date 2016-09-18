@@ -1,0 +1,203 @@
+<!--
+
+	- center 'missing/matching' skills
+	- add apply button
+	- add level for skills (expert, proficient, intermediate, beginner)
+-->
+<!-- <html>
+	<head>
+
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" href="job-profile-style.css">
+	</head>
+	<body> -->
+<main>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-sm-2"></div>
+			<div class="col-sm-8">
+				<!-- START 'Job Header' --> 
+				<div class="row job-header">
+				   	<div class="col-sm-4">
+				   		<img src="netapp.png"/>
+					</div>
+			   		<div class="col-sm-8"><br/>
+			   			<div class="row">
+			   				<div class="col-sm-12">
+				   				<h3><b>NetApp</b></h3>
+				   				<h4>Java Developer</h4>
+				   			</div>
+				   			<div class="col-sm-12">
+				   				<div class="row">
+				   					<div class="col-sm-4">
+				   						<i>Posted 8/24/16</i>
+				   					</div>
+					   				<div class="col-sm-4">
+					   					<span class="glyphicon glyphicon-map-marker"></span>&nbsp;Pittsburgh,PA
+					   				</div>
+					   				<div class="col-sm-4">
+					   					<span class="glyphicon glyphicon-user"></span>&nbsp;3 Applicants
+					   				</div>
+					   				<div class="col-sm-12"><br/>
+						   				<p style="font-size:.8em">
+						   					We are a results-oriented company that offers exemplary technical leadership. As a smaller, customer-focused organization, we respond quickly to new requirements, and deliver secure, stable, and tested solutions rapidly, dependably, and on-schedule.
+						   				</p>
+					   				</div>
+					   			</div>
+				   			</div>
+				   		</div>
+			   		</div>
+				 </div >
+				<!-- END 'Job Header' -->
+
+				<!-- START 'Job Body' -->
+				<div class="row"><br/><br/>
+					<div class="col-sm-12">
+						<h5>Who We Need?<small>&nbsp;&nbsp;Role/Responsibilities</small></h5>
+						<p>Working within an Agile environment, you will be collaborating with other application feature teams to ensure integrated end-to-end design and testing. You will participate in story planning and detailed daily standups. Design, develop, and test software components using Java and latest generation technologies Collaborate closely and enthusiastically with Product Owners, Quality Assurance, and User Experience during discovery, design, test, and development in a Scrum/Agile environment. Do what needs to be done to get stories completed without regard to role type. The applicant should meet the required technical skills.</p>
+					</div>
+				</div>
+				<br/><br/>
+				<div class="row">
+					<!-- START 'Requirements' -->
+					<div class="col-sm-6 requirements">
+						<br/>
+						<h5>Required Skills:</h5>
+			<!-- 			<ul>
+							<li>Java/J2EE</li>
+							<li>Spring MVC</li>
+							<li>JSF 2.0</li>
+							<li>Eclipse IDE</li>
+							<li>JSP</li>
+							<li>Ant</li>
+							<li>HTML</li>
+							<li>JavaScript</li>
+						</ul> -->
+						
+						<table class="skills">
+							<tr>
+								<td>Java/J2EE</td>
+								<td><button type="button" class="btn btn-default btn-xs disabled expert">Expert</button></td>
+							</tr>
+							<tr>
+								<td>Spring MVC</td>
+								<td><button type="button" class="btn btn-default btn-xs disabled expert">Expert</button></td>
+							</tr>
+							<tr>
+								<td>JSF 2.0</td>
+								<td><button type="button" class="btn btn-default btn-xs disabled intermediate">Intermediate</button></td>
+							</tr>
+							<tr>
+								<td>Eclipse IDE</td>
+								<td><button type="button" class="btn btn-default btn-xs disabled intermediate">Intermediate</button></td>
+							</tr>
+							<tr>
+								<td>JSP</td>
+								<td><button type="button" class="btn btn-default btn-xs disabled expert">Expert</button></td>
+							</tr>
+							<tr>
+								<td>Ant</td>
+								<td><button type="button" class="btn btn-default btn-xs disabled intermediate">Intermediate</button></td>
+							</tr>
+							<tr>
+								<td>HTML</td>
+								<td><button type="button" class="btn btn-default btn-xs disabled intermediate">Intermediate</button></td>
+							</tr>
+							<tr>
+								<td>Javascript</td>
+								<td><button type="button" class="btn btn-default btn-xs disabled intermediate">Intermediate</button></td>
+							</tr>
+						</table>
+						<br/>
+						<h5>Preferred Skills:</h5>
+					<!-- 	<ul>
+							<li>Jira</li>
+							
+							<li>JSF 2.0</li>
+							<li>XML</li>
+						</ul> -->
+
+						<table class="skills">
+							<tr>
+								<td>Jira</td>
+								<td><button type="button" class="btn btn-default btn-xs disabled intermediate">Intermediate</button></td>
+							</tr>
+							<tr>
+								<td>XML</td>
+								<td><button type="button" class="btn btn-default btn-xs disabled novice">Novice</button></td>
+							</tr>
+							<tr>
+								<td>JSF 2.0</td>
+								<td><button type="button" class="btn btn-default btn-xs disabled novice">Novice</button></td>
+							</tr>
+				
+						</table>
+
+
+						<button type="button" class="btn btn-primary btn-lg" id="apply-btn">Apply</button>
+						
+
+					</div>
+					<!-- END 'Requirements' -->
+
+					<!-- START 'Matching Skills' -->
+					<br/>
+					<div class="col-sm-6 matching-skills">
+						<div class="row" >
+							<div class="col-sm-12">
+								<h5 style="text-align:center">How You Qualify?</h5>
+								<br/><br/>
+								<svg id="fillgauge2" width="100%" height="200">
+								</svg>
+							</div>
+
+							<div class="col-sm-12">
+								<div class="row">
+									<br/>
+									<div class="col-sm-6" style="width: 150px;left:50%;margin-left:-160px; position:relative">
+										<h6>Matching Skills</h6>
+										<span style="text-align:center" class="glyphicon glyphicon-plus"></span>&nbsp;Java/J2EE<br/>
+										<span class="glyphicon glyphicon-plus"></span>&nbsp;Jira<br/>
+										<span class="glyphicon glyphicon-plus"></span>&nbsp;Spring MVC<br/>
+										<span class="glyphicon glyphicon-plus"></span>&nbsp;JSF 2.0<br/>
+										<span class="glyphicon glyphicon-plus"></span>&nbsp;Eclipse IDE<br/>
+										<span class="glyphicon glyphicon-plus"></span>&nbsp;XML<br/>
+										<span class="glyphicon glyphicon-plus"></span>&nbsp;HTML<br/>
+										<span class="glyphicon glyphicon-plus"></span>&nbsp;JavaScript<br/>
+									</div>
+									<div class="col-sm-6" style="left: 100%; margin-left: -160px; width: 150px;">
+										<h6>Missing Skills</h6>
+										<span class="glyphicon glyphicon-minus"></span>&nbsp;Jira<br/>
+										<span class="glyphicon glyphicon-minus"></span>&nbsp;Spring MVC<br/>
+										<span class="glyphicon glyphicon-minus"></span>&nbsp;JSP<br/>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- END 'Matching Skills' -->
+				</div>
+
+				<!-- <div class="row">
+					<button type="button" class="btn btn-success">Success</button>
+
+				</div> -->
+				<!-- END 'Job Body'-->
+			</div>
+
+
+
+			<div class="col-sm-2"></div>
+		</div>
+	</div>
+
+
+	<script src="https://d3js.org/d3.v3.min.js"></script>
+	<script src="liquidFillGauge.js"></script>
+	<script src="d3-settings.js"></script>
+
+</main>
+<!-- 	</body>
+</html> -->
+
+
