@@ -4,7 +4,6 @@ import uiRouter from 'angular-ui-router';
 import AppComponent from './app.component.js';
 import Common from './common/common';
 import Components from './components/components';
-import '../style/app.css';
 import signupComponent from './components/signup/signup.component';
 import companyProfileComponent from './components/company-profile/company-profile.component'
 // import profileComponent from './components/profile/profile.component';
@@ -14,7 +13,7 @@ import AppFactory from './app.config';
 
 import "!style!css!sass!../style/main.scss";
 import "!style!css!sass!../style/ui.scss";
-import "../style/style.css";
+import "!style!css!../style/style.css";
 import "../style/home.css";
 import "../style/app.css";
 
