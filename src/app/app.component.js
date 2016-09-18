@@ -5,7 +5,9 @@ let appComponent = () => {
   return {
     template,
     restrict: 'E',
-    controller
+    controller,
+    controllerAs: 'app',
+    bindToController: true
   };
 };
 

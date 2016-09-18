@@ -6,7 +6,8 @@ import Common from './common/common';
 import Components from './components/components';
 import '../style/app.css';
 import AppFactory from './app.config';
-var css = require("!style!css!sass!../style/main.scss");
+import "!style!css!sass!../style/main.scss";
+import "!style!css!sass!../style/ui.scss";
 
 
 angular.module('app', [

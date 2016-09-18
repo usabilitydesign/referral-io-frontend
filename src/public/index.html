@@ -11,6 +11,10 @@
   <base href="/">
 </head>
 <body>
-  <app></app>
+  <app class='app' data-ng-class=" { 'layout-boxed': app.main.layout === 'boxed',
+                                       'nav-collapsed-min': app.main.isMenuCollapsed
+            } ">
+
+  </app>
 </body>
 </html>
