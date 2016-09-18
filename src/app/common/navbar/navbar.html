@@ -1,29 +1,5 @@
-<!-- <nav class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" ui-sref="home">
-        REFERRAL.IO
-      </a>
-    </div>
-    <div id="navbar" class="collapse navbar-collapse">
-      <ul class="nav navbar-nav">
-        <li ui-sref-active="active"><a ui-sref="home">Home</a></li>
-        <li ui-sref-active="active"><a ui-sref="profile">Profile</a></li>
-        <li ui-sref-active="active"><a ui-sref="job">Job Posting</a></li>
-        <li ui-sref-active="active"><a ui-sref="review">Peer Review</a></li>
-        <li ui-sref-active="active"><a ui-sref="new">New</a></li>
-      </ul>
-    </div>
-  </div>
-</nav>
- -->
- <header class="top-header clearfix">
+
+ <header class="top-header clearfix container">
 
      <!-- Logo -->
      <div class="logo bg-dark"
@@ -54,33 +30,12 @@
                               class="toggle-min"
                               ><i class="fa fa-bars"></i></a>
              </li>
-             <li class="dropdown hidden-xs" uib-dropdown is-open="status.isopenSettings">
-                 <a href="javascript:;"  uib-dropdown-toggle ng-disabled="disabled"><i class="fa fa-cog"></i></a>
-                 <div class="dropdown-menu with-arrow panel panel-default admin-options dropdown-menu-scaleIn" uib-dropdown-menu ui-not-close-on-click>
-                     <div class="panel-heading"><span ></span></div>
-                     <ul class="list-group">
-                         <li class="list-group-item">
-                             <p>Layouts Style</p>
-                             <label class="ui-radio"><input name="layout" type="radio" value="boxed" ng-model="main.layout"><span>Boxed</span></label>
-                             <label class="ui-radio"><input name="layout" type="radio" value="wide" ng-model="main.layout"><span>Wide</span></label>
-                         </li>
-                         <li class="list-group-item">
-                             <p>Additional</p>
-                             <label class="ui-checkbox"><input name="checkbox1" type="checkbox" value="option1" ng-model="main.fixedHeader"><span>Fixed Top Header</span></label>
-                             <br>
-                             <label class="ui-checkbox"><input name="checkbox1" type="checkbox" value="option1" ng-model="main.fixedSidebar"><span>Fixed Sidebar Menu</span></label>
-                         </li>
-                         <li class="list-group-item">
-                             <p>
-                                 <span>Page Transition: </span>
-                                 <span class="space"></span>
-                                 <select ng-model="main.pageTransition"
-                                         ng-options="ageTransitionOpt.name for ageTransitionOpt in pageTransitionOpts"></select>
-                             </p>
-                         </li>
-                     </ul>
-                 </div>
-             </li>
+
+
+               <li ui-sref-active="active"><a ui-sref="profile">Profile</a></li>
+               <li ui-sref-active="active"><a ui-sref="signup">Sign Up</a></li>
+               <li ui-sref-active="active"><a ui-sref="review">Peer Review</a></li>
+
              <li class="search-box visible-md visible-lg">
                  <div class="input-group">
                      <span class="input-group-addon"><i class="fa fa-search"></i></span>

@@ -1,6 +1,6 @@
 class ProfileController {
   constructor() {
-    this.name = 'home';
+    this.name = 'profile';
   }
 }
 
