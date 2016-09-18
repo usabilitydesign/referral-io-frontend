@@ -7,25 +7,25 @@ class AppCtrl {
     var date = new Date();
     var year = date.getFullYear();
     var pageTransitionOpts = [
-        {
-            name: 'Fade up',
-            "class": 'animate-fade-up'
-        }, {
-            name: 'Scale up',
-            "class": 'ainmate-scale-up'
-        }, {
-            name: 'Slide in from right',
-            "class": 'ainmate-slide-in-right'
-        }, {
-            name: 'Flip Y',
-            "class": 'animate-flip-y'
-        }
-    ];
+              {
+                  name: 'Fade up',
+                  "class": 'animate-fade-up'
+              }, {
+                  name: 'Scale up',
+                  "class": 'ainmate-scale-up'
+              }, {
+                  name: 'Slide in from right',
+                  "class": 'ainmate-slide-in-right'
+              }, {
+                  name: 'Flip Y',
+                  "class": 'animate-flip-y'
+              }
+          ];
     this.main = {
               brand: 'Flatify',
               name: 'Lisa',
               year: year,
-              layout: 'wide',                                 // 'boxed', 'wide'
+              layout: 'boxed',                                 // 'boxed', 'wide'
               isMenuCollapsed: true,                         // true, false
               fixedHeader: true,                              // true, false
               fixedSidebar: true,                             // true, false

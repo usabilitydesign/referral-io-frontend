@@ -15,6 +15,7 @@ import "!style!css!sass!../style/main.scss";
 import "!style!css!sass!../style/ui.scss";
 import "!style!css!../style/style.css";
 
+<<<<<<< HEAD
 angular
   .module('app', [
     uiRouter,
@@ -24,3 +25,13 @@ angular
   .directive('app', AppComponent)
   .factory('AppFactory', AppFactory)
   .config(($stateProvider, $urlRouterProvider) => {});
+=======
+
+angular.module('app', [
+  uiRouter,
+  Common.name,
+  Components.name
+])
+.directive('app', AppComponent)
+.factory('AppFactory', AppFactory);
+>>>>>>> parent of dab601b... Merge remote-tracking branch 'origin/leigh' into charlotte
