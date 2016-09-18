@@ -142,6 +142,7 @@ h2 {
     padding: 15px;
     overflow: scroll;
     margin-bottom: 50px;
+    text-align: left;
 }
 
 .review-block h2 {
