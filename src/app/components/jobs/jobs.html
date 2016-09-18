@@ -1,0 +1,79 @@
+<style>
+.job{
+	background-color: white;
+	margin-top: 50px;
+-webkit-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.54);
+-moz-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.54);
+box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.54);
+
+}
+.job .col-sm-4{
+	background-color: #DDE7EB;
+	padding-bottom: 10px;
+	height: 100%;
+	}
+.job .col-sm-4 a{
+	font-size: 16px;
+}
+.job .col-sm-8{
+	border-left: 1px solid #A0B4BA;
+}
+.job h3{
+	color: #2A437A;
+}
+</style>
+<main>
+  <div class="container-fluid">
+  		<div class="row">
+  			<div class="col-sm-2"></div>
+  			<div class="col-sm-8">
+  				<br/><br/>
+  				<h1>Jennifer's Qualified Listing<br/><small>Jobs that fit your skill set</small></h1>
+  				<div class="row job">
+  					<div class="col-sm-4">
+  						<h3>NetApp</h3>
+  						<h4>Java Developer</h4>
+  						<br/>
+  						<a href="/#/company">View</a>
+  					</div>
+  					<div class="col-sm-8"><br/>
+  						<p>Design, develop, and test software components using Java and latest generation technologies Collaborate closely and enthusiastically with Product Owners, Quality Assurance, and User Experience during discovery, design, test, and development in a Scrum/Agile environment.</p>
+  						<br/>
+  						<b>Required Skills</b>
+  						<ul>
+  							<li>Java/J2EE</li>
+  							<li>Spring MVC</li>
+  							<li>JSF 2.0</li>
+  							<li>Eclipse IDE</li>
+  							<li>JSP</li>
+  							<li>Ant</li>
+  						</ul>
+  						<br/>
+  					</div>
+  				</div>
+
+  				<div class="row job" ng-repeat="job in vm.jobs">
+  					<div class="col-sm-4">
+  						<h3>{{job.campany_name}}</h3>
+  						<h4>{{job.name}}</h4>
+  						<br/>
+  						<a href="/#/company">View</a>
+  					</div>
+  					<div class="col-sm-8"><br/>
+  						<p>{{job.description}}</p>
+  						<br/>
+  						<b>Required Skills</b>
+  						<ul>
+  							<li ng-repeat="skill in job.required_skills">{{skill}}</li>
+  						</ul>
+  						<br/>
+  					</div>
+  				</div>
+  			</div>
+  			<div class="col-sm-2"></div>
+  		</div>
+  		<br/><br/>
+	  
+  </div>
+
+</main>

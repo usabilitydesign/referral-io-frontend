@@ -61,4 +61,20 @@ export default class ApiService {
         console.log('error with getSkills', err);
       });
   }
+
+  getJobs(id) {
+    return this.$http({
+      method: 'GET',
+      url: `${baseUrl}/api/jobs`
+    })
+      .then(result => {
+        console.log('getSkills', result);
+        return result.data;
+      })
+      .catch(err => {
+        console.log('error with getSkills', err);
+      });
+  }
+
+
 }
