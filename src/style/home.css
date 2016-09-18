@@ -33,9 +33,10 @@
     top: 380px;
 }
 
-#btn-scroll:hover{
+.btn-scroll:hover, .btn-active, .btn-focus{
     background-color: #198E6D;
     color: white;
+    outline: 0;
 }
 
 
