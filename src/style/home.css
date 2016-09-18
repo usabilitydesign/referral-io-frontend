@@ -1,0 +1,27 @@
+.container-problem, .container-market, .container-competition{
+    background: #EEEEEE;
+}
+
+.container-business, .container-team{
+    background: white;
+}
+
+.container{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+    width: 100%;
+}
+
+.demo{
+    padding: 70px 100px;
+    text-align: center;
+}
+
+
+.home-title{
+    font-size: 60px;
+}
+
+.home-subtitle{
+    font-size: 30px;
+}
