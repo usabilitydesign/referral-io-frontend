@@ -5,6 +5,9 @@ import Common from './common/common';
 import Components from './components/components';
 
 
+import '../style/app.css';
+import '../style/company-profile.css';
+
 import signupComponent from './components/signup/signup.component';
 import companyProfileComponent from './components/company-profile/company-profile.component'
 // import profileComponent from './components/profile/profile.component';
