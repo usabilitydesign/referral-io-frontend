@@ -1,150 +1,53 @@
 <main>
     <div class="container" style="margin-top: 30px;">
-
-
-      <div class="row">
-          <div class="col-sm-12">
-              <div class="row bs-wizard" style="border-bottom:0;">
-                  <div class="col-xs-4 bs-wizard-step complete">
-                      <div class="text-center bs-wizard-stepnum">Step 1</div>
-                      <div class="progress">
-                          <div class="progress-bar"></div>
-                      </div>
-                      <a class="bs-wizard-dot"  ui-sref="profile"><h4>Skill Review</h4></a>
-                      <div class="bs-wizard-info text-center"></div>
-                  </div>
-
-                  <div class="col-xs-4 bs-wizard-step disabled"><!-- complete -->
-                      <div class="text-center bs-wizard-stepnum ">Step 2</div>
-                      <div class="progress">
-                          <div class="progress-bar"></div>
-                      </div>
-                      <a class="bs-wizard-dot" ui-sref="codereview"><h4>Code Review</h4></a>
-                      <div class="bs-wizard-info text-center"></div>
-                  </div>
-                  <div class="col-xs-4 bs-wizard-step disabled"><!-- active -->
-                      <div class="text-center bs-wizard-stepnum">Step 4</div>
-                      <div class="progress">
-                          <div class="progress-bar"></div>
-                      </div>
-                      <a class="bs-wizard-dot"  ui-sref="video"><h4>Video Review</h4></a>
-                      <div class="bs-wizard-info text-center"></div>
-                  </div>
-              </div>
-          </div>
-      </div>
-
         <div class="row">
             <div class="col-sm-12">
-                <div class="skill-review-block">
-
-
-                    <!-- Skills -->
-                    <div class="review review-skills">
-                        <div class="col-sm-12">
-                            <h2>Skills</h2>
+                <div class="row bs-wizard" style="border-bottom:0;">
+                    <div class="col-xs-4 bs-wizard-step complete">
+                        <div class="text-center bs-wizard-stepnum">Step 1</div>
+                        <div class="progress">
+                            <div class="progress-bar"></div>
                         </div>
-                        <div class="skill">
-                            <div class="col-sm-1">
-                                <p class="sub-title">Java</p>
-                            </div>
-                            <div class="col-sm-11">
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">5 Years</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="skill">
-                            <div class="col-sm-1">
-                                <p class="sub-title">Python</p>
-                            </div>
-                            <div class="col-sm-11">
-                                <div class="progress">
-                                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 60%">7 years</div>
-                                </div>
-                            </div>
-                        </div>
+                        <a class="bs-wizard-dot" ui-sref="profile"><h4>Skill Review</h4></a>
+                        <div class="bs-wizard-info text-center"></div>
                     </div>
-                    <!-- Projects -->
-                    <div class="review review-projects">
-                        <div class="col-sm-12">
-                            <h2>Projects</h2>
+                    <div class="col-xs-4 bs-wizard-step complete">
+                        <!-- complete -->
+                        <div class="text-center bs-wizard-stepnum ">Step 2</div>
+                        <div class="progress">
+                            <div class="progress-bar"></div>
                         </div>
-                        <div class="projects">
-                            <div class="col-sm-12">
-                                <a href="#"><p class="sub-title">https://meetcharlottechen.appspot.com</p></a>
-                                <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo1">Advice <span class="glyphicon glyphicon-pencil"></span></button>
-                            </div>
-                            <div class="col-sm-12">
-                                  <div id="demo1" class="collapse">
-                                      <div class="form-group">
-                                          <textarea class="form-control" rows="5" id="comment"></textarea>
-                                      </div>
-                                  </div>
-                            </div>
-                        </div>
-                        <div class="projects">
-                            <div class="col-sm-12">
-                                <a href="#"><p class="sub-title">https://github.com.charlottechen1993/pitt_fashion_share</p></a>
-                                <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo2">Advice <span class="glyphicon glyphicon-pencil"></span></button>
-                            </div>
-                            <div class="col-sm-12">
-                                  <div id="demo2" class="collapse">
-                                      <div class="form-group">
-                                          <textarea class="form-control" rows="5" id="comment"></textarea>
-                                      </div>
-                                  </div>
-                            </div>
-                        </div>
+                        <a class="bs-wizard-dot" ui-sref="codereview"><h4>Code Review</h4></a>
+                        <div class="bs-wizard-info text-center"></div>
                     </div>
-                    <!-- Github -->
-                    <div class="review review-github">
-                        <div class="col-sm-12">
-                            <h2>Repository Participation</h2><button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo-repo">Advice <span class="glyphicon glyphicon-pencil"></span></button>
+                    <div class="col-xs-4 bs-wizard-step complete">
+                        <!-- active -->
+                        <div class="text-center bs-wizard-stepnum">Step 4</div>
+                        <div class="progress">
+                            <div class="progress-bar"></div>
                         </div>
-                        <div class="col-sm-4">
-                            <p class="sub-title">Total Commits: 298</p>
-                            <br>
-                            <br>
-                            <p class="sub-title">Total Repositories: 14</p>
-                            <br>
-                            <br>
-                            <p class="sub-title">Commit Frequency: 10/week</p>
-                        </div>
-                        <div class="col-sm-8">
-                            <img src="img/git-participation.png" style="width: 100%;">
-                        </div>
-                        <div class="col-sm-12">
-                              <div id="demo-repo" class="collapse">
-                                  <div class="form-group">
-                                      <textarea class="form-control" rows="5" id="comment"></textarea>
-                                  </div>
-                              </div>
-                        </div>
-                    </div>
-                    <!-- Code Community Involvement -->
-                    <div class="review review-github">
-                        <div class="col-sm-12">
-                            <h2>Stack Exchange Contribution</h2>
-                        </div>
-                        <div class="col-sm-4">
-                            <p class="sub-title">Reputation: Expert</p>
-                            <br>
-                            <br>
-                            <p class="sub-title">Total Score: 1052</p>
-                            <br>
-                            <br>
-                            <p class="sub-title">Total Posts: 10</p>
-                            <br>
-                            <br>
-                            <p class="sub-title">Communities: 13</p>
-                        </div>
-                        <div class="col-sm-8">
-                            <img src="img/stack-overflow.png" style="width: 100%">
-                        </div>
+                        <a class="bs-wizard-dot" ui-sref="video"><h4>Video Review</h4></a>
+                        <div class="bs-wizard-info text-center"></div>
                     </div>
                 </div>
             </div>
-      </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4 p_All-2x">
+                <video width="100%" height="240" controls>
+                    <source src="../assets/images/synapse.mov" type="video/mp4">
+                </video>
+            </div>
+            <div class="col-sm-4 p_All-2x">
+                <video width="100%" height="240" controls>
+                    <source src="../assets/images/termcloud.mov" type="video/mp4">
+                </video>
+            </div>
+            <div class="col-sm-4 p_All-2x">
+                <video width="100%" height="240" controls>
+                    <source src="../assets/images/video.mov" type="video/mp4">
+                </video>
+            </div>
+        </div>
     </div>
 </main>

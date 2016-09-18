@@ -1,6 +1,6 @@
 class VideoController {
   constructor() {
-    this.name = 'video';
+    this.name = 'videoc';
 
   }
 

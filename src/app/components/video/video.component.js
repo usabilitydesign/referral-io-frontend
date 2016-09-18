@@ -6,9 +6,7 @@ let videoComponent = {
   restrict: 'E',
   scope: {},
   template,
-  controller,
-  controllerAs: 'vm',
-  bindToController: true
+  controller
 };
 
 export default videoComponent;

@@ -2,19 +2,19 @@ import angular from 'angular';
 import uiRouter from 'angular-ui-router';
 import videoComponent from './video.component';
 
-let videoModule = angular.module('video', [
+let videoModule = angular.module('videoc', [
   uiRouter
 ])
 
 .config(($stateProvider) => {
   $stateProvider
-     .state('video', {
-          url: '/video',
-          template: '<video></video>',
+     .state('videoC', {
+          url: '/videoc',
+          template: '<videoc></videoc>',
       })
 
 })
 
-.component('video', videoComponent);
+.component('videoc', videoComponent);
 
 export default videoModule;
