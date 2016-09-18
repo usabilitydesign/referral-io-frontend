@@ -5,8 +5,12 @@
     </div>
 </hero>
 
-<button type="button" class="btn btn-default" id="btn-scroll"><span class="glyphicon glyphicon-chevron-down"></span></button>
-
+<button type="button" class="btn btn-default btn-scroll" id="btn-problem"><i class="fa fa-question" aria-hidden="true"></i></button>
+<button type="button" class="btn btn-default btn-scroll" id="btn-solution"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></button>
+<button type="button" class="btn btn-default btn-scroll" id="btn-market"><i class="fa fa-money" aria-hidden="true"></i></button>
+<button type="button" class="btn btn-default btn-scroll" id="btn-business"><i class="fa fa-briefcase" aria-hidden="true"></i></button>
+<button type="button" class="btn btn-default btn-scroll" id="btn-competition"><i class="fa fa-bolt" aria-hidden="true"></i></button>
+<button type="button" class="btn btn-default btn-scroll" id="btn-team"><i class="fa fa-users" aria-hidden="true"></i></button>
 <!-------------->
 <!-- PROBLEM --->
 <!-------------->
@@ -46,16 +50,92 @@
 <!----------------->
 <div class='container demo container-competition' id="competition">
     <h1><strong>The Competition</strong></h1>
-    <table>
-        <thead>
-            <th></th>
-        </thead>
-        <tbody>
-            <tr>
-                <td></td>
-            </tr>
-        </tbody>
-    </table>
+    <table class="table competition-table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Monster</th>
+          <th>Dice</th>
+          <th>Indeed</th>
+          <th>LinkedIn</th>
+          <th>Hired</th>
+          <th>Referral.io</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Job Database</th>
+          <td><i class="fa fa-circle" aria-hidden="true"></i></td>
+          <td><i class="fa fa-circle" aria-hidden="true"></i></td>
+          <td><i class="fa fa-circle" aria-hidden="true"></i></td>
+          <td><i class="fa fa-circle" aria-hidden="true"></i></td>
+          <td><i class="fa fa-circle" aria-hidden="true"></i></td>
+          <td><i class="fa fa-circle" aria-hidden="true"></i></td>
+        </tr>
+        <tr>
+          <th scope="row">Hiree Database</th>
+          <td><i class="fa fa-circle" aria-hidden="true"></i></td>
+          <td><i class="fa fa-circle" aria-hidden="true"></i></td>
+          <td><i class="fa fa-circle" aria-hidden="true"></i></td>
+          <td><i class="fa fa-circle" aria-hidden="true"></i></td>
+          <td><i class="fa fa-circle" aria-hidden="true"></i></td>
+          <td><i class="fa fa-circle" aria-hidden="true"></i></td>
+        </tr>
+        <tr>
+          <th scope="row">Candidate Driven Matching</th>
+          <td><i class="fa fa-circle" aria-hidden="true"></i></td>
+          <td><i class="fa fa-circle" aria-hidden="true"></i></td>
+          <td><i class="fa fa-circle" aria-hidden="true"></i></td>
+          <td><i class="fa fa-circle" aria-hidden="true"></i></td>
+          <td></td>
+          <td><i class="fa fa-circle" aria-hidden="true"></i></td>
+        </tr>
+        <tr>
+          <th scope="row">Company Driven Matching</th>
+          <td><span class="glyphicon glyphicon-adjust"></span></td>
+          <td><span class="glyphicon glyphicon-adjust"></span></td>
+          <td><span class="glyphicon glyphicon-adjust"></span></td>
+          <td></td>
+          <td><i class="fa fa-circle" aria-hidden="true"></i></td>
+          <td><i class="fa fa-circle" aria-hidden="true"></i></td>
+        </tr>
+        <tr>
+          <th scope="row">Developer Focused</th>
+          <td></td>
+          <td><i class="fa fa-circle" aria-hidden="true"></i></td>
+          <td></td>
+          <td></td>
+          <td><i class="fa fa-circle" aria-hidden="true"></i></td>
+          <td><i class="fa fa-circle" aria-hidden="true"></i></td>
+        </tr>
+          <th scope="row">Networking</th>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td><i class="fa fa-circle" aria-hidden="true"></i></td>
+          <td></td>
+          <td><i class="fa fa-circle" aria-hidden="true"></i></td>
+        </tr>
+        <tr>
+          <th scope="row">Vetted Candidates</th>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td><i class="fa fa-circle" aria-hidden="true"></i></td>
+        </tr>
+        <tr>
+          <th scope="row">Career Development</th>
+          <td><span class="glyphicon glyphicon-adjust"></span></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td><i class="fa fa-circle" aria-hidden="true"></i></td>
+        </tr>
+      </tbody>
+</table>
 </div>
 <!---------->
 <!-- TEAM -->
@@ -79,36 +159,34 @@
 </div>
     
 <script>
-    var count = 0;
-     $("#btn-scroll").click(function(){
-         if (count == 0){
-            $('html, body').animate({
-                scrollTop: $("#problem").offset().top
-            }, 600);
-         } else if (count == 1){
-             $('html, body').animate({
-                scrollTop: $("#solution").offset().top
-            }, 600);
-         } else if (count == 2){
-             $('html, body').animate({
-                scrollTop: $("#market").offset().top
-            }, 600);
-         } else if (count == 3){
-             $('html, body').animate({
-                scrollTop: $("#business").offset().top
-            }, 600);
-         } else if (count == 4){
-             $('html, body').animate({
-                scrollTop: $("#competition").offset().top
-            }, 600);
-         } else if (count == 5){
-             $('html, body').animate({
-                scrollTop: $("#team").offset().top
-            }, 600);
-         }
-         count += 1;
-         if (count==6){
-             count =0;
-         }
+     $("#btn-problem").click(function(){
+        $('html, body').animate({
+            scrollTop: $("#problem").offset().top
+        }, 600);
+     })
+     $("#btn-solution").click(function(){
+        $('html, body').animate({
+            scrollTop: $("#solution").offset().top
+        }, 600);
+     })
+     $("#btn-market").click(function(){
+        $('html, body').animate({
+            scrollTop: $("#market").offset().top
+        }, 600);
+     })
+     $("#btn-business").click(function(){
+        $('html, body').animate({
+            scrollTop: $("#business").offset().top
+        }, 600);
+     })
+     $("#btn-competition").click(function(){
+        $('html, body').animate({
+            scrollTop: $("#competition").offset().top
+        }, 600);
+     })
+     $("#btn-team").click(function(){
+        $('html, body').animate({
+            scrollTop: $("#team").offset().top
+        }, 600);
      })
 </script>
