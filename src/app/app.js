@@ -12,9 +12,9 @@ import "!style!css!../style/style.css";
 
 
 angular.module('app', [
-  uiRouter,
-  Common.name,
-  Components.name
+    uiRouter,
+    Common.name,
+    Components.name
 ])
 .directive('app', AppComponent)
 .factory('AppFactory', AppFactory);
