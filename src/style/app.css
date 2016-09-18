@@ -213,13 +213,8 @@ footer {
     font-weight: bold;
     outline: 0;
 }
-/*.app > .header-container.header-fixed {
 
-<<<<<<< HEAD
-    top: 0px;
-}
-=======
-*/.app > .header-container.header-fixed {
+.app > .header-container.header-fixed {
     top: 0px !important;
 
 }

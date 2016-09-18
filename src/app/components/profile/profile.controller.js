@@ -1,9 +1,10 @@
 class ProfileController {
   constructor() {
     this.name = 'profile';
-
     this.makeChart();
+
   }
+
 
   makeChart() {
     var svg = d3.select('#user_chart').append('svg')
@@ -110,6 +111,7 @@ class ProfileController {
         .attr('height', function(d) { return height - y(d.score); });
 
   }
+
 }
 
 export default ProfileController;

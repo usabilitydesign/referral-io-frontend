@@ -14,20 +14,6 @@ let profileModule = angular.module('profile', [
           template: '<profile></profile>',
       })
 
-      .state('profile.profile', {
-          // loaded into ui-view of parent's template
-          template: '<profile></profile>',
-          url: '/profile'
-      })
-    // .state('profile', {
-    //   url: '/profile',
-    //   template: '<profile></profile>'
-    // })
-    // .state('codereview', {
-    //   url: '/codereview',
-    //   parent: 'profile',
-    //   template: '<codereview></codereview>'
-    // });
 })
 
 .component('profile', profileComponent);

@@ -4,6 +4,7 @@ import AppComponent from './app.component.js';
 import Common from './common/common';
 import Components from './components/components';
 
+
 import '../style/app.css';
 import '../style/company-profile.css';
 
@@ -19,6 +20,7 @@ import "!style!css!sass!../style/ui.scss";
 import "!style!css!../style/style.css";
 import "../style/home.css";
 import "../style/app.css";
+import '../style/company-profile.css';
 
 angular
   .module('app', [

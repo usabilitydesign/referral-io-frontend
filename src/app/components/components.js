@@ -8,11 +8,16 @@ import Review from './review/review';
 import Jobs from './jobs/jobs';
 
 import About from './about/about';
+import Codereview from './codereview/codereview';
+import Video from './video/video';
+
 
 
 export default angular.module('app.components', [
   Home.name,
   Profile.name,
+  Video.name,
+  Codereview.name,
   Signup.name,
   Company.name,
   Review.name,
