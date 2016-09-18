@@ -72,11 +72,6 @@
     font-size: 30px;
 }
 
-.team-photo img{
-    width: 100%;
-    display: inline-block;
-}
-
 .competition-table thead{
     background-color: #24AE89;
     color: white;
@@ -87,4 +82,9 @@
 }
 .competition-table tbody tr:nth-child(odd){
     background-color: rgba(36, 174, 137, 0.1);
+}
+
+.container-team img{
+    margin-right: 40px;
+    width: 80%;
 }
