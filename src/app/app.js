@@ -11,9 +11,9 @@ import "!style!css!sass!../style/ui.scss";
 
 
 angular.module('app', [
-  uiRouter,
-  Common.name,
-  Components.name
+    uiRouter,
+    Common.name,
+    Components.name
 ])
 .directive('app', AppComponent)
 .factory('AppFactory', AppFactory);
