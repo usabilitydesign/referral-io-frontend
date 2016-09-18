@@ -9,13 +9,16 @@ let profileModule = angular.module('profile', [
 .config(($stateProvider) => {
   $stateProvider
      .state('profile', {
-          // abstract: true,
-          templateUrl: 'profile.html'
+          url: '/profile',
+          // abstract: true
+          template: '<profile></profile>',
       })
-      // .state('profile.codereview', {
-      //     // loaded into ui-view of parent's template
-      //     templateUrl: 'profile.codereview.html'
-      // })
+
+      .state('profile.profile', {
+          // loaded into ui-view of parent's template
+          template: '<profile></profile>',
+          url: '/profile'
+      })
     // .state('profile', {
     //   url: '/profile',
     //   template: '<profile></profile>'
