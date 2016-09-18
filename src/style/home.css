@@ -1,8 +1,19 @@
+.btn-scroll{
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    padding: 6px 0;
+    font-size: 12px;
+    line-height: 1.428571429;
+    border-radius: 15px;
+    background-color: #59B0D7;
+}
+
 .container-problem, .container-market, .container-competition{
     background: #EEEEEE;
 }
 
-.container-business, .container-team{
+.container-solution, .container-business, .container-team{
     background: white;
 }
 
@@ -12,9 +23,14 @@
     width: 100%;
 }
 
+.container h1{
+    margin-bottom: 30px;
+}
+
 .demo{
     padding: 70px 100px;
     text-align: center;
+    min-height: 600px;
 }
 
 
@@ -24,4 +40,9 @@
 
 .home-subtitle{
     font-size: 30px;
+}
+
+.team-photo img{
+    width: 100%;
+    display: inline-block;
 }
