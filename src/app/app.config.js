@@ -27,7 +27,7 @@ let AppFactory = function () {
               name: 'Lisa',
               year: year,
               layout: 'wide',                                 // 'boxed', 'wide'
-              isMenuCollapsed: true,                         // true, false
+              isMenuCollapsed: true,                          // true, false
               fixedHeader: true,                              // true, false
               fixedSidebar: true,                             // true, false
               pageTransition: pageTransitionOpts[0],          // 0, 1, 2, 3... and build your own
