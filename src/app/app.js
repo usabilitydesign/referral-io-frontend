@@ -6,6 +6,11 @@ import Common from './common/common';
 import Components from './components/components';
 import '../style/app.css';
 
+import AppFactory from './app.config';
+import "!style!css!sass!../style/main.scss";
+import "!style!css!sass!../style/ui.scss";
+
+
 angular
   .module('app', [
     uiRouter,
@@ -13,9 +18,4 @@ angular
     Components.name
   ])
   .directive('app', AppComponent)
-  .config(($stateProvider, $urlRouterProvider) => {
-    console.log('in config', $urlRouterProvider);
-  })
-
-
-
+  .factory('AppFactory', AppFactory);

@@ -1,7 +1,7 @@
+
 import { baseUrl } from '../constants';
 
 export default class ApiService {
-
   constructor($http) {
     this.$http = $http;
   }

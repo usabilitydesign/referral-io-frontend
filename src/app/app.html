@@ -1,8 +1,19 @@
-<navbar></navbar>
-<main>
-  <div ui-view></div>
-
-  <!-- Images (and assets) are parsed and loaded from within the public directory -->
-</main>
+<navbar
+  class="header-container" 
+  data-ng-class="{ 'header-fixed': app.main.fixedHeader,
+                   'bg-white': ['11','12','13','14','15','16','21'].indexOf(app.main.skin) >= 0,
+                   'bg-dark': app.main.skin === '31',
+                   'bg-primary': ['22','32'].indexOf(app.main.skin) >= 0,
+                   'bg-success': ['23','33'].indexOf(app.main.skin) >= 0,
+                   'bg-info-alt': ['24','34'].indexOf(app.main.skin) >= 0,
+                   'bg-warning': ['25','35'].indexOf(app.main.skin) >= 0,
+                   'bg-danger': ['26','36'].indexOf(app.main.skin) >= 0
+  }"
+  style
+></navbar>
+<section class=main-container>
+  <section class='' ui-view></section>
+</section>
 <footer>
 </footer>
+
