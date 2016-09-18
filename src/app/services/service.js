@@ -12,7 +12,6 @@ export default class ApiService {
       url: `${baseUrl}/api/users/${id}`
     })
       .then(result => {
-        console.log('getUser', result);
         return result.data;
       })
       .catch(err => {
@@ -26,7 +25,6 @@ export default class ApiService {
       url: `${baseUrl}/api/users`
     })
       .then(result => {
-        console.log('getUsersThen', result);
         return result.data;
       })
       .catch(err => {
@@ -40,7 +38,6 @@ export default class ApiService {
       url: `${baseUrl}/api/roles`
     })
       .then(result => {
-        console.log('getRoles', result);
         return result.data;
       })
       .catch(err => {
@@ -54,7 +51,6 @@ export default class ApiService {
       url: `${baseUrl}/api/skills`
     })
       .then(result => {
-        console.log('getSkills', result);
         return result.data;
       })
       .catch(err => {

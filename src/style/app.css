@@ -15,6 +15,19 @@ footer {
   text-align: center;
   font-size: 0.8em;
 }
+.bg-white{
+  background-color: #fff;
+}
+.p_T-4x{
+  padding-top: 40px;
+}
+.p_V-4x{
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.m_T-0{
+  margin-top: 0px;
+}
 
 .projects .btn-info {
     display: inline;
@@ -199,4 +212,8 @@ footer {
     color: #2ea0a3;
     font-weight: bold;
     outline: 0;
+}
+.app > .header-container.header-fixed {
+
+    top: 0px;
 }
