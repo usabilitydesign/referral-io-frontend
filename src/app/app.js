@@ -14,7 +14,7 @@ angular
   ])
   .directive('app', AppComponent)
   .config(($stateProvider, $urlRouterProvider) => {
-    console.log('in config');
+    console.log('in config', $urlRouterProvider);
   })
 
 
