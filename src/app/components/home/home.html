@@ -5,7 +5,7 @@
     </div>
 </hero>
 
-<button type="button" class="btn btn-default btn-scroll"><span class="glyphicon glyphicon-chevron-down"></span></button>
+<button type="button" class="btn btn-default" id="btn-scroll"><span class="glyphicon glyphicon-chevron-down"></span></button>
 
 <!-------------->
 <!-- PROBLEM --->
@@ -30,12 +30,8 @@
 <!-------------->
 <div class='container demo container-market' id="market">
     <h1><strong>The Market</h1> 
-    <div class="col-sm-6">
-        <img src="img/marketsize.png" style="width: 80%">
-    </div>
-    <div class="col-sm-6">
-        <p>US corporations spend nearly $8.1 billion each year on tech recruiting services, staff, and products. In all, US companies spend $72 billion on recruiting. Worldwide, the numbers are even larger.</p>
-    </div>
+    <p>US corporations spend nearly $8.1 billion each year on tech recruiting services, staff, and products. In all, US companies spend $72 billion on recruiting. Worldwide, the numbers are even larger.</p>
+    <img src="img/marketsize.png" style="width: 50%">
 </div>
 <!-------------->
 <!-- BUSINESS -->
@@ -64,7 +60,7 @@
 <!---------->
 <!-- TEAM -->
 <!---------->
-<div class='container demo container-team'>
+<div class='container demo container-team' id="team">
     <h1><strong>The Team</strong></h1> 
     <div class="row">
         <div class="team-photo col-sm-3">
@@ -81,3 +77,38 @@
         </div>
     </div>
 </div>
+    
+<script>
+    var count = 0;
+     $("#btn-scroll").click(function(){
+         if (count == 0){
+            $('html, body').animate({
+                scrollTop: $("#problem").offset().top
+            }, 600);
+         } else if (count == 1){
+             $('html, body').animate({
+                scrollTop: $("#solution").offset().top
+            }, 600);
+         } else if (count == 2){
+             $('html, body').animate({
+                scrollTop: $("#market").offset().top
+            }, 600);
+         } else if (count == 3){
+             $('html, body').animate({
+                scrollTop: $("#business").offset().top
+            }, 600);
+         } else if (count == 4){
+             $('html, body').animate({
+                scrollTop: $("#competition").offset().top
+            }, 600);
+         } else if (count == 5){
+             $('html, body').animate({
+                scrollTop: $("#team").offset().top
+            }, 600);
+         }
+         count += 1;
+         if (count==6){
+             count =0;
+         }
+     })
+</script>
