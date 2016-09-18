@@ -5,8 +5,12 @@
     </div>
 </hero>
 
-<button type="button" class="btn btn-default btn-scroll"><span class="glyphicon glyphicon-chevron-down"></span></button>
-
+<button type="button" class="btn btn-default btn-scroll" id="btn-problem"><i class="fa fa-question" aria-hidden="true"></i></button>
+<button type="button" class="btn btn-default btn-scroll" id="btn-solution"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></button>
+<button type="button" class="btn btn-default btn-scroll" id="btn-market"><i class="fa fa-money" aria-hidden="true"></i></button>
+<button type="button" class="btn btn-default btn-scroll" id="btn-business"><i class="fa fa-briefcase" aria-hidden="true"></i></button>
+<button type="button" class="btn btn-default btn-scroll" id="btn-competition"><i class="fa fa-bolt" aria-hidden="true"></i></button>
+<button type="button" class="btn btn-default btn-scroll" id="btn-team"><i class="fa fa-users" aria-hidden="true"></i></button>
 <!-------------->
 <!-- PROBLEM --->
 <!-------------->
@@ -30,12 +34,8 @@
 <!-------------->
 <div class='container demo container-market' id="market">
     <h1><strong>The Market</h1> 
-    <div class="col-sm-6">
-        <img src="img/marketsize.png" style="width: 80%">
-    </div>
-    <div class="col-sm-6">
-        <p>US corporations spend nearly $8.1 billion each year on tech recruiting services, staff, and products. In all, US companies spend $72 billion on recruiting. Worldwide, the numbers are even larger.</p>
-    </div>
+    <p>US corporations spend nearly $8.1 billion each year on tech recruiting services, staff, and products. In all, US companies spend $72 billion on recruiting. Worldwide, the numbers are even larger.</p>
+    <img src="img/marketsize.png" style="width: 50%">
 </div>
 <!-------------->
 <!-- BUSINESS -->
@@ -50,34 +50,148 @@
 <!----------------->
 <div class='container demo container-competition' id="competition">
     <h1><strong>The Competition</strong></h1>
-    <table>
-        <thead>
-            <th></th>
-        </thead>
-        <tbody>
-            <tr>
-                <td></td>
-            </tr>
-        </tbody>
-    </table>
+    <table class="table competition-table">
+      <thead>
+        <tr>
+          <th>#</th>
+          <th>Monster</th>
+          <th>Dice</th>
+          <th>Indeed</th>
+          <th>LinkedIn</th>
+          <th>Hired</th>
+          <th>Referral.io</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Job Database</th>
+          <td><i class="fa fa-circle" aria-hidden="true"></i></td>
+          <td><i class="fa fa-circle" aria-hidden="true"></i></td>
+          <td><i class="fa fa-circle" aria-hidden="true"></i></td>
+          <td><i class="fa fa-circle" aria-hidden="true"></i></td>
+          <td><i class="fa fa-circle" aria-hidden="true"></i></td>
+          <td><i class="fa fa-circle" aria-hidden="true"></i></td>
+        </tr>
+        <tr>
+          <th scope="row">Hiree Database</th>
+          <td><i class="fa fa-circle" aria-hidden="true"></i></td>
+          <td><i class="fa fa-circle" aria-hidden="true"></i></td>
+          <td><i class="fa fa-circle" aria-hidden="true"></i></td>
+          <td><i class="fa fa-circle" aria-hidden="true"></i></td>
+          <td><i class="fa fa-circle" aria-hidden="true"></i></td>
+          <td><i class="fa fa-circle" aria-hidden="true"></i></td>
+        </tr>
+        <tr>
+          <th scope="row">Candidate Driven Matching</th>
+          <td><i class="fa fa-circle" aria-hidden="true"></i></td>
+          <td><i class="fa fa-circle" aria-hidden="true"></i></td>
+          <td><i class="fa fa-circle" aria-hidden="true"></i></td>
+          <td><i class="fa fa-circle" aria-hidden="true"></i></td>
+          <td></td>
+          <td><i class="fa fa-circle" aria-hidden="true"></i></td>
+        </tr>
+        <tr>
+          <th scope="row">Company Driven Matching</th>
+          <td><span class="glyphicon glyphicon-adjust"></span></td>
+          <td><span class="glyphicon glyphicon-adjust"></span></td>
+          <td><span class="glyphicon glyphicon-adjust"></span></td>
+          <td></td>
+          <td><i class="fa fa-circle" aria-hidden="true"></i></td>
+          <td><i class="fa fa-circle" aria-hidden="true"></i></td>
+        </tr>
+        <tr>
+          <th scope="row">Developer Focused</th>
+          <td></td>
+          <td><i class="fa fa-circle" aria-hidden="true"></i></td>
+          <td></td>
+          <td></td>
+          <td><i class="fa fa-circle" aria-hidden="true"></i></td>
+          <td><i class="fa fa-circle" aria-hidden="true"></i></td>
+        </tr>
+          <th scope="row">Networking</th>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td><i class="fa fa-circle" aria-hidden="true"></i></td>
+          <td></td>
+          <td><i class="fa fa-circle" aria-hidden="true"></i></td>
+        </tr>
+        <tr>
+          <th scope="row">Vetted Candidates</th>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td><i class="fa fa-circle" aria-hidden="true"></i></td>
+        </tr>
+        <tr>
+          <th scope="row">Career Development</th>
+          <td><span class="glyphicon glyphicon-adjust"></span></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td><i class="fa fa-circle" aria-hidden="true"></i></td>
+        </tr>
+      </tbody>
+</table>
 </div>
 <!---------->
 <!-- TEAM -->
 <!---------->
-<div class='container demo container-team'>
+<div class='container demo container-team' id="team">
     <h1><strong>The Team</strong></h1> 
     <div class="row">
-        <div class="team-photo col-sm-3">
-            <img src="img/placeholder.jpg">
-        </div>
-        <div class="team-photo col-sm-3">
-            <img src="img/placeholder.jpg">
-        </div>
-        <div class="team-photo col-sm-3">
-            <img src="img/placeholder.jpg">
-        </div>
-        <div class="team-photo col-sm-3">
-            <img src="img/placeholder.jpg">
+        <div class="col-sm-12">
+            <table>
+                <tr>
+                    <td><img src="img/portrait-leigh.jpg"><p>Leigh Boone</p></td>
+                    <td><img src="img/portait-blake.jpg"><p>Blake Thomas</p></td>
+                    <td><img src="img/portait-charlotte.jpg"><p>Charlotte Chen</p></td>
+                    <td><img src="img/portrait-dan.jpg"><p>Dan Hui</p></td>
+                </tr>
+            </table>
+            <table style="margin-left: 150px;">
+                <tr>
+                    <td><img src="img/portrait-michael.jpg"><p>Michael Collins</p></td>
+                    <td><img src="img/portrait-reza.jpg"><p>Reza</p></td>
+                    <td><img src="img/portrait-quincy.jpg"><p>Quincy</p></td>
+                </tr>
+            </table>
         </div>
     </div>
 </div>
+    
+<script>
+     $("#btn-problem").click(function(){
+        $('html, body').animate({
+            scrollTop: $("#problem").offset().top
+        }, 600);
+     })
+     $("#btn-solution").click(function(){
+        $('html, body').animate({
+            scrollTop: $("#solution").offset().top
+        }, 600);
+     })
+     $("#btn-market").click(function(){
+        $('html, body').animate({
+            scrollTop: $("#market").offset().top
+        }, 600);
+     })
+     $("#btn-business").click(function(){
+        $('html, body').animate({
+            scrollTop: $("#business").offset().top
+        }, 600);
+     })
+     $("#btn-competition").click(function(){
+        $('html, body').animate({
+            scrollTop: $("#competition").offset().top
+        }, 600);
+     })
+     $("#btn-team").click(function(){
+        $('html, body').animate({
+            scrollTop: $("#team").offset().top
+        }, 600);
+     })
+</script>
