@@ -211,3 +211,8 @@ footer {
     outline: 0;
 }
 
+.app > .header-container.header-fixed {
+    top: 0px !important;
+
+}
+

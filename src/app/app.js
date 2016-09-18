@@ -11,9 +11,12 @@ import companyProfileComponent from './components/company-profile/company-profil
 
 
 import AppFactory from './app.config';
+
 import "!style!css!sass!../style/main.scss";
 import "!style!css!sass!../style/ui.scss";
-import "!style!css!../style/style.css";
+import "../style/style.css";
+import "../style/home.css";
+import "../style/app.css";
 
 angular
   .module('app', [
