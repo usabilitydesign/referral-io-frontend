@@ -7,6 +7,7 @@
 
 <button type="button" class="btn btn-default btn-scroll" id="btn-problem"><i class="fa fa-question" aria-hidden="true"></i></button>
 <button type="button" class="btn btn-default btn-scroll" id="btn-solution"><i class="fa fa-lightbulb-o" aria-hidden="true"></i></button>
+<button type="button" class="btn btn-default btn-scroll" id="btn-research"><span class="glyphicon glyphicon-search"></span></button>
 <button type="button" class="btn btn-default btn-scroll" id="btn-market"><i class="fa fa-money" aria-hidden="true"></i></button>
 <button type="button" class="btn btn-default btn-scroll" id="btn-business"><i class="fa fa-briefcase" aria-hidden="true"></i></button>
 <button type="button" class="btn btn-default btn-scroll" id="btn-competition"><i class="fa fa-bolt" aria-hidden="true"></i></button>
@@ -27,23 +28,13 @@
 <div class='container demo container-solution' id="solution">
     <h1 class='m_T-0'><strong>The Solution</strong></h1>
     <img src ="img/tagline.png" style="width: 80%">
-    <h2 class='text-center'>Market Research</h2> 
-    <img style='width:100%' src="img/referral-io-infographics.png" alt=""></div>
-<!-------------->
-<!--- MARKET --->
-<!-------------->
-<div class='container demo container-market' id="market">
-    <h1><strong>The Market</h1> 
-    <p>US corporations spend nearly $8.1 billion each year on tech recruiting services, staff, and products. In all, US companies spend $72 billion on recruiting. Worldwide, the numbers are even larger.</p>
-    <img src="img/marketsize.png" style="width: 50%">
 </div>
 <!-------------->
-<!-- BUSINESS -->
+<!-- Research -->
 <!-------------->
-<div class='container demo container-business' id="business">
-    <h1><strong>Business Model</strong></h1>
-    <p>To get traction we would begin as a service business, providing qualified tech candidates to employers. As our pool of developers grows and becomes self-sustaining, our focus would shift to expand the platform.</p>
-    <img src="img/bizmodel.png" style="width:100%">
+<div class="container demo container-research" id="research">
+    <h1>Market Research</h1> 
+    <img style='width:100%' src="img/referral-io-infographics.png" alt="">
 </div>
 <!----------------->
 <!-- COMPETITION -->
@@ -137,6 +128,23 @@
       </tbody>
 </table>
 </div>
+<!-------------->
+<!-- BUSINESS -->
+<!-------------->
+<div class='container demo container-business' id="business">
+    <h1><strong>Business Model</strong></h1>
+    <p>To get traction we would begin as a service business, providing qualified tech candidates to employers. As our pool of developers grows and becomes self-sustaining, our focus would shift to expand the platform.</p>
+    <img src="img/bizmodel.png" style="width:100%">
+</div>
+<!-------------->
+<!--- MARKET --->
+<!-------------->
+<div class='container demo container-market' id="market">
+    <h1><strong>The Market<strong></strong></h1> 
+    <p>US corporations spend nearly $8.1 billion each year on tech recruiting services, staff, and products. In all, US companies spend $72 billion on recruiting. Worldwide, the numbers are even larger.</p>
+    <img src="img/marketsize.png" style="width: 50%">
+</div>
+
 <!---------->
 <!-- TEAM -->
 <!---------->
@@ -177,6 +185,11 @@
      $("#btn-market").click(function(){
         $('html, body').animate({
             scrollTop: $("#market").offset().top
+        }, 600);
+     })
+     $("#btn-research").click(function(){
+        $('html, body').animate({
+            scrollTop: $("#research").offset().top
         }, 600);
      })
      $("#btn-business").click(function(){

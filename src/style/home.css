@@ -20,17 +20,20 @@
 #btn-solution{
     top: 140px;
 }
-#btn-market{
+#btn-research{
     top: 200px;
 }
-#btn-business{
+#btn-competition{
     top: 260px;
 }
-#btn-competition{
+#btn-business{
     top: 320px;
 }
-#btn-team{
+#btn-market{
     top: 380px;
+}
+#btn-team{
+    top: 440px;
 }
 
 .btn-scroll:hover, .btn-active, .btn-focus{
@@ -40,11 +43,11 @@
 }
 
 
-.container-problem, .container-market, .container-competition{
+.container-problem, .container-research, .container-business, .container-team{
     background: #EEEEEE;
 }
 
-.container-solution, .container-business, .container-team{
+.container-solution, .container-competition, .container-market{
     background: white;
 }
 
