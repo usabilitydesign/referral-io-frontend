@@ -7,8 +7,7 @@ class ReviewController {
 
     // ajax
     this.getUsers();
-    this.getRoles();
-    this.getSkills();
+
   }
 
   getUsers() {
@@ -30,6 +29,16 @@ class ReviewController {
       .then(result => {
         this.skills = result;
       });
+  }
+
+  postReview() {
+    this.service.postReview(
+      userId,
+      revieweeId,
+      review
+    ).then(result => {
+      console.log('successful post');
+    })
   }
 }
 

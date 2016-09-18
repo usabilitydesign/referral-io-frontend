@@ -57,4 +57,20 @@ export default class ApiService {
         console.log('error with getSkills', err);
       });
   }
+
+  postReview(user, reviewee, review) {
+    console.log('submitting review', user, reviewee, review);
+
+    return this.$http({
+      method: 'POST',
+      url: `${baseUrl}/api/users/${user}/review?reviewee_id=${reviewee_id}`,
+      body: review
+    })
+      .then(result => {
+        console.log('submit', result);
+      })
+      .catch(err => {
+        console.log('err with submitReview', err);
+      });
+  } 
 }
