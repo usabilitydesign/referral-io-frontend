@@ -9,7 +9,6 @@ class ReviewController {
     this.getUsers();
     this.getRoles();
     this.getSkills();
-
     this.makeChart();
   }
 

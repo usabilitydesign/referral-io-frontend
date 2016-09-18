@@ -6,7 +6,7 @@ class ProfileController {
   }
 
   makeChart() {
-    var svg = d3.select('body').append('svg')
+    var svg = d3.select('#user_chart').append('svg')
       .attr('width', '800')
       .attr('height', '400');
 
