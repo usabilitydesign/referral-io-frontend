@@ -135,7 +135,7 @@ h2 {
     text-decoration: none;
 }
 
-.review-block {
+.skill-review-block {
     width: 100%;
     background-color: white;
     border: 5px solid #e8e8e8;
@@ -145,9 +145,10 @@ h2 {
     text-align: left;
 }
 
-.review-block h2 {
+.skill-review-block h2 {
     margin-bottom: 20px;
     margin-top: 50px;
+    display: inline-block;
 }
 
 .progress-skill {
